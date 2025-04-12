@@ -96,6 +96,7 @@ function App() {
 
 
          <Route path='/home' element={<Home/>} />
+         <Route path='/login' element={<Login/>}/>
          
          {/* <Route path='movie/:id' element={<Moviebookingtime/>}/>
          <Route path='seat' element={<Seat/>}/>
