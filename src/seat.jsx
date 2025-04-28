@@ -22,7 +22,7 @@ export default function Seat() {
   useEffect(() => {
     const fetchShowtimeData = async () => {
       try {
-        const res = await axios.get(`https://reset-password-backend-1.onrender.com//seat/${id}`);
+        const res = await axios.get(`https://reset-password-backend-1.onrender.com/seat/${id}`);
         setShowtimeinfo(res.data);
       } catch (error) {
         console.error('Error fetching showtime data:', error);

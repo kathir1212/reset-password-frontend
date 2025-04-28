@@ -39,7 +39,7 @@ function Threaterlist() {
     console.log(id,"ididididi");
     
 
-   await axios.get(`https://reset-password-backend-1.onrender.com//threater/threaterlist`)  
+   await axios.get(`https://reset-password-backend-1.onrender.com/threater/threaterlist`)  
     .then(res => {  
       const threaterlists = res.data;  
     console.log(threaterlists,"aninini");
@@ -55,7 +55,7 @@ function Threaterlist() {
 
   const fetchMoviesid = async (query, newPage = 1, reset = false , id) => {
     try {
-      const response = await axios.get(`https://reset-password-backend-1.onrender.com//movieuser/movies/${searchQuery}/${id}`);
+      const response = await axios.get(`https://reset-password-backend-1.onrender.com/movieuser/movies/${searchQuery}/${id}`);
       console.log(response.data.data,".....");
       
       if (response.data.data) {
@@ -74,7 +74,7 @@ function Threaterlist() {
     console.log(id,"ididididi");
     
 
-   await axios.get(`https://reset-password-backend-1.onrender.com//seat`)  
+   await axios.get(`https://reset-password-backend-1.onrender.com/seat`)  
     .then(res => {  
       const showlists = res.data;  
     console.log(showlists,"aninini");

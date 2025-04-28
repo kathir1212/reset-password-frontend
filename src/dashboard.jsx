@@ -10,7 +10,7 @@ const [booking, setBookinginfo] = useState([]);
   let Showtimeapi = async () => {
     
 
-   await axios.get(`https://reset-password-backend-1.onrender.com//booking/`)  
+   await axios.get(`https://reset-password-backend-1.onrender.com/booking/`)  
     .then(res => {  
       const showlists = res.data.data;  
     console.log(showlists,"aninini");
