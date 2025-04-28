@@ -12,7 +12,7 @@ function Home() {
 
   const fetchMovies = async (query, newPage = 1, reset = false) => {
     try {
-      const response = await axios.get(`https://reset-password-backend-1.onrender.com/movieuser/movies/${searchQuery}`);
+      const response = await axios.get(`https://reset-password-backend-2.onrender.com/movieuser/movies/${searchQuery}`);
       console.log(response.data.data,".....");
       
       if (response.data.data) {
@@ -30,7 +30,7 @@ function Home() {
     console.log(id,"ididididi");
     
 
-   await axios.get(`https://reset-password-backend-1.onrender.com/seat/grouped-showtimes`)  
+   await axios.get(`https://reset-password-backend-2.onrender.com/seat/grouped-showtimes`)  
     .then(res => {  
       const showlists = res.data;  
     console.log(showlists,"aninini");

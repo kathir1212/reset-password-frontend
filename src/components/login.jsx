@@ -28,7 +28,7 @@ function Login() {
       setLoading(true);
       setError('');
 
-      const response = await axios.post('https://reset-password-backend-zerv.onrender.com/movieuser/login', {
+      const response = await axios.post('https://reset-password-backend-2.onrender.com/movieuser/login', {
         email,
         password,
       });
