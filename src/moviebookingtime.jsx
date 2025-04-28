@@ -9,7 +9,7 @@ function Moviebookingtime() {
   useEffect(() => {
     const fetchShowtimeData = async () => {
       try {
-        const res = await axios.get(`http://localhost:3000/seat/grouped-showtimes/${id}`);
+        const res = await axios.get(`https://reset-password-backend-1.onrender.com//seat/grouped-showtimes/${id}`);
         setShowtimeinfo(res.data);
       } catch (error) {
         console.error('Error fetching showtime data:', error);

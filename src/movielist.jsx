@@ -10,7 +10,7 @@ function MovieList() {
 
   const fetchMovies = async (query, newPage = 1, reset = false) => {
     try {
-      const response = await axios.get(`http://localhost:3000/movieuser/movies/${query}`);
+      const response = await axios.get(`https://reset-password-backend-1.onrender.com//movieuser/movies/${query}`);
       if (response.data.data) {
         setMovies((prevMovies) => (reset ? response.data.data : [...prevMovies, ...response.data.data]));
       }

@@ -20,7 +20,7 @@ function Bookticketchecklist() {
         useEffect(() => {
           const fetchShowtimeData = async () => {
             try {
-              const res = await axios.get(`http://localhost:3000/seat/${id}`);
+              const res = await axios.get(`https://reset-password-backend-1.onrender.com//seat/${id}`);
               console.log(res.data._id);
               
               setShowtimeinfo(res.data);
@@ -35,7 +35,7 @@ function Bookticketchecklist() {
 
   const handlePost = async () => {
     try {
-      const response = await fetch("http://localhost:3000/booking/ticket", {
+      const response = await fetch("https://reset-password-backend-1.onrender.com//booking/ticket", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

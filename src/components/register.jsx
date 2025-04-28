@@ -31,7 +31,7 @@ function Register() {
     }
 
     try {
-      const response = await axios.post('http://localhost:3000/movieuser/register', {
+      const response = await axios.post('https://reset-password-backend-zerv.onrender.com/movieuser/register', {
         name,
         email,
         password,
